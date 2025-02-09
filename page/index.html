@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Video Downloader</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>TikTok Video Downloader</h2>
+      <div class="input-group">
+        <input
+          type="text"
+          id="tiktokUrl"
+          placeholder="Paste TikTok URL here..."
+        />
+      </div>
+      <button class="button" id="fetchBtn">Fetch Video Details</button>
+
+      <div id="videoContainer" style="display: none">
+        <div class="avatar">
+          <img src="" id="avatar" alt="Creator Avatar" />
+          <p id="nickname">Nickname</p>
+        </div>
+        <div class="video-desc">
+          <p id="description"></p>
+        </div>
+        <div class="statistics">
+          <div class="stat">
+            <strong id="likeCount">0</strong>
+            <div>Likes</div>
+          </div>
+          <div class="stat">
+            <strong id="commentCount">0</strong>
+            <div>Comments</div>
+          </div>
+          <div class="stat">
+            <strong id="shareCount">0</strong>
+            <div>Shares</div>
+          </div>
+        </div>
+        <div class="download-section">
+          <a href="#" class="button" id="downloadVideo">Download Video</a>
+          <a href="#" class="button" id="downloadMusic">Download Music</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+GET http://localhost:8080/tes
+
+// download
+###
+POST http://localhost:8080/download
+Content-Type: application/json
+
+{
+    "url": "https://www.tiktok.com/@yvgcomp/video/7468331082941746462?is_from_webapp=1&sender_device=pc"
+}
